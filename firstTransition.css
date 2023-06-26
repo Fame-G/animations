@@ -1,0 +1,34 @@
+body{
+    background-color: #333;
+}
+
+.box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background-color: #fff;
+    top: 200px;
+    /* /* transition-property: background-color, border-radius, transform; */
+    transition-duration: 0.7s, 0.5s; */
+    /* 1s to go to red color and 3secs to go to cirlce */
+    transition-delay: 0.7s, 0.5s;
+    /* it will delay red to 1s and border-radius for 2s */
+    transition-timing-function: ease-in;
+    /* ? transition shorthand
+    ?transition-property: all;
+    ?transition-duration: 1s; */
+    /* ?this is when you want it to affect all and it will all have the same durations */
+    
+    
+
+    /*! transition: border-radius 0.5s ease-in 1s;transition property, transition duration, timing function and transition delay */
+}
+
+
+
+.box:hover{
+    background-color: red;
+    border-radius: 50%;
+    transform: rotateZ(180deg);
+}

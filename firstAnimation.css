@@ -1,0 +1,43 @@
+body{
+    background-color: #333;
+}
+
+.box{
+    background-color: #fff;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: fameanimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+     /* it will make the iteration go infinite if u put it in ifininte  */
+     animation-delay: 2s;
+     animation-direction: alternate;
+     /* alternate will make it go in reverse and back to normal movement and vice versa  */
+     /* animation-timing-function: linear; */
+     /* animation-timining-linear makes it go in the same speed all through */
+     /* animation-timing-function: ease-in; */
+     /* it will start slow and end fast. */
+     /* animation-timing-function: ease-out;
+     it will start fast and end slow. */
+     animation-timing-function: ease-in-out;
+     /* this is the default, it will start slow and end slow  */
+    animation-fill-mode: both;
+    /* it will take the shape of the last animation */
+
+    /*? animation shorthand /animation: fame animation 4s ease-in-out 2s  2 altername ....name,duration, timing function, delay, iteration count and direction*/
+/* !animation browser support prefixes*/
+    /** animation: fameanimation ease-in 0.5s infinite alternate both; //
+    -webkit-animation: fameanimation ease-in 0.5s infinite alternate both; ios or tablet browsers for example safari or some android browsers, chrome, for mobile support
+    -ms-animation: fameanimation ease-in 0.5s infinite alternate both; for internet explorer.
+    -moz-animation: fameanimation ease-in 0.5s infinite alternate both; for firefox
+    -o-animation: fameanimation ease-in 0.5s infinite alternate both; */  //for opera browser
+    /*todo always add them to any of your animation  */
+}
+@keyframes fameanimation {
+    0% {background-color: #fff; left: 0px; top: 0px; border-radius: 0 0 0 0;}
+    25% {background-color: red; left: 300px; top: 0px; border-radius: 50% 0 0 0;}
+    50% {background-color: green; left: 300px; top: 300px; border-radius: 50% 50% 0 0;}
+    75% {background-color: blue;  left: 0px; top: 300px; border-radius: 50% 50% 50% 0;}
+    100% {background-color: #fff; left: 0px; top: 0px; border-radius: 50% 50% 50% 50%;}
+}
