@@ -26,16 +26,17 @@ body{
     animation-name: heading;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    margin-bottom: 40px;
-   
+ 
 }
+
 
 @keyframes heading {
 0%{top: -50px;}
-100%{top: 200px;}
+100%{top: 150px;}
 }
 
 #content{
+    margin-top: 20px;
     position: relative;
     animation-name: content;
     animation-duration: 3s;
